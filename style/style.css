@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 :root {
     --black: #151515;
     --green: #4ee1a0;
@@ -10,8 +12,6 @@
     --body-txt: 1.125rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -22,4 +22,118 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     background: var(--black);
     color: var(--gray);
+}
+
+.container {
+    width: calc(100% - 2.5rem);
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    padding-top: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 40px; */
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    z-index: 100000;
+}
+
+.social-icons a {
+    padding-right: 2rem;
+}
+
+.hero-area {
+    margin-bottom: 11.5rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-block {
+    z-index: 10000;
+}
+
+.text-block h1 {
+    font-size: var(--heading-xl);
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+.styled-text {
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    text-underline-offset: 14px;
+    text-decoration-skip-ink: none;
+}
+
+.text-block p {
+    font-size: var(--body-txt);
+    width: 35ch;
+    line-height: 28px;
+    margin-top: 2.68rem;
+    margin-bottom: 4.25rem;
+}
+
+.text-block a {
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    text-underline-offset: 14px;
+}
+
+.img-block {
+    width: 40%;
+}
+
+.img-block img {
+    width: 448px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.skillsets {
+    margin-top: 4.5rem;
+    margin-bottom: 8.75rem;
+}
+
+.skill-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill {
+    flex: 1 1 calc(33.33% - 30px);
+}
+
+.skill h3 {
+    font-size: var(--heading-l);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.skill p {
+    font-size: var(--body-txt);
 }
